@@ -1,7 +1,7 @@
 {
   "name": "tgc-crud-hands-on",
   "version": "1.0.0",
-  "description": "",
+  "description": "In this Library App hands on, you are to write a CRUD application for displaying, creating, updating and deleting a list of books.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/kunxin-chor/tgc-crud-hands-on#readme",
   "dependencies": {
-    "express": "^4.17.3",
+    "express": "^4.18.1",
     "hbs": "^4.2.0",
     "node-localstorage": "^2.2.1",
     "wax-on": "^1.2.2"

@@ -1,0 +1,25 @@
+{{#extends 'base'}}
+
+{{#block 'content'}}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Title</th>
+            <th>ISBN</th>
+        </tr>
+    </thead>
+
+    {{#each books}}
+    <tr>
+        <th>{{this.id}}</th>
+        <th>{{this.title}}</th>
+        <th>{{this.isbn}}</th>
+    </tr>
+    {{/each}}
+</table>
+
+{{/block}}
+
+{{/extends}}
