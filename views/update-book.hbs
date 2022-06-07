@@ -1,0 +1,26 @@
+{{#extends 'base'}}
+
+{{#block 'content'}}
+
+<!-- what do i need here? getting the data to be updated, check how the update works -->
+<div class="container">
+    <form method="POST">
+        <div>
+            <label>Title: </label>
+            <input type="text" name="title" class="form form-control" value="{{title}}">
+        </div>
+        <div>
+            <label>ISBN: </label>
+            <input type="text" name="isbn" class="form form-control" value="{{isbn}}" </div>
+            
+            
+        </div>
+        <input type="Submit" value="Accept" class="btn btn-primary btn-lg">
+    </form>
+
+</div>
+
+
+{{/block}}
+
+{{/extends}}

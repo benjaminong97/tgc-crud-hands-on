@@ -2,23 +2,31 @@
 
 {{#block 'content'}}
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>ID</th>
-            <th>Title</th>
-            <th>ISBN</th>
-        </tr>
-    </thead>
+<div class="container">
+    <h1>The Greatest Collection of Books (not really)</h1>
+    <h3>Don't see what you're looking for? Create a new entry: </h3>
+    <a href="/create" class="btn btn-primary btn-lg">CREATE</a>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Title</th>
+                <th>ISBN</th>
+            </tr>
+        </thead>
 
-    {{#each books}}
-    <tr>
-        <th>{{this.id}}</th>
-        <th>{{this.title}}</th>
-        <th>{{this.isbn}}</th>
-    </tr>
-    {{/each}}
-</table>
+        {{#each books}}
+        <tr>
+            <th>{{this.id}}</th>
+            <th>{{this.title}}</th>
+            <th>{{this.isbn}}</th>
+            <th><a href='/update/{{this.id}}' class='btn btn-primary'>Update</a></th>
+            <th><a href='/delete/{{this.id}}' class='btn btn-danger'>Delete</a></th>
+        </tr>
+        {{/each}}
+    </table>
+</div>
+
 
 {{/block}}
 
